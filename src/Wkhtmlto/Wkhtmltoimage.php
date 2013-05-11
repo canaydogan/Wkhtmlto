@@ -15,7 +15,7 @@ class Wkhtmltoimage extends AbstractWkhtmlto
         $cmd[] = $this->getInput();
         $cmd[] = $this->getOutput();
 
-        $output = \shell_exec(implode(' ', $cmd));
+        return \shell_exec(implode(' ', $cmd));
     }
 
 }

@@ -1,0 +1,15 @@
+{
+    "name": "canaydogan/wkhtmlto",
+    "description": "Zend Framework 2 Module For Wkhtmlto",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Can Aydogan",
+            "email": "canaydogan89@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    }
+}

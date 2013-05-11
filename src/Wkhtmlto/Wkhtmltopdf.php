@@ -15,7 +15,7 @@ class Wkhtmltopdf extends AbstractWkhtmlto
         $cmd[] = $this->getInput();
         $cmd[] = $this->getOutput();
 
-        var_dump(\exec(implode(' ', $cmd)));
+        return \shell_exec(implode(' ', $cmd));
     }
 
 }

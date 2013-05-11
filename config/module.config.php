@@ -1,12 +1,14 @@
 <?php
 
 return array(
-    'di' => array(
-        'instance' => array(
-            'alias' => array(
-                'wkhtmltopdf' => 'Wkhtmlto\Wkhtmltopdf',
-                'wkhtmltoimage' => 'Wkhtmlto\Wkhtmltoimage',
-            )
+    'service_manager' => array(
+        'factories' => array(
+            'wkhtmltopdf' => function ($sm) {
+                return new Wkhtmlto\Wkhtmltopdf();
+            },
+            'wkhtmltoimage' => function ($sm) {
+                return new Wkhtmlto\Wkhtmltoimage();
+            }
         )
     )
 );
